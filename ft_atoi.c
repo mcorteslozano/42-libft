@@ -3,38 +3,46 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:53:14 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 19:15:42 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/06 22:55:30 by mario            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(char *str)
+static int		ft_isspace(char c)
 {
-	int numero;
-	int negativo;
-	int i;
+	if (c == '\t' || c == '\n' || c == '\r')
+		return (1);
+	else if (c == '\f' || c == '\v' || c == ' ')
+		return (1);
+	else 
+		return (0);
+}
 
-	numero = 0;
-	negativo = 1;
-	i = 0;
-	while ((str[i] == ' ') || (str[i] >= 9 && str[i] <= 13))
-		i++;
-	while (str[i] == '-' || str[i] == '+')
+int		ft_atoi(const char *str)
+{
+	int res;
+	int negative;
+
+	negative = 1;
+	res = 0;
+	while(ft_isspace(*str))
+		str++;
+	if(*str == '-')
 	{
-		if (str[i] == '-')
-		{
-			negativo = -negativo;
-		}
-		i++;
+		negative = -1;
+		str++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	else if (*str == '+')
 	{
-		numero = numero * 10 + str[i] - 48;
-		i++;
+		str++;
 	}
-	return (numero * negativo);
+	while(*str >= '0' && *str <= '9')
+	{
+		res = (res * 10) + (*str++ - 48);
+	}
+	return (negative * res);
 }

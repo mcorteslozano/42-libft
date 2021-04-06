@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 19:18:26 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 19:51:09 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/06 23:04:48 by mario            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,17 @@
 # include <stdlib.h>
 # include <ctype.h>
 
-int		ft_atoi(char *str);
-void    ft_bzero(void *s, size_t n);
+int		ft_atoi(const char *str); //Pending
+void    ft_bzero(void *s, size_t n); //Pending
 void    *ft_calloc(size_t nmemb, size_t size);
 int     ft_isalnum(int c); //OK
 int     ft_isalpha(int c); //OK
 int     ft_isascii(int c); //OK
 int     ft_isdigit(int c); //OK
 int     ft_isprint(int c); //OK
-void    *ft_memccpy(void *restrict dest, const void *restrict src, int c, size_t n);
-void    *ft_memchr(const void *s, int c, size_t n);
-int     ft_memcmp(const void *s1, const void *s2, size_t n);
+void    *ft_memccpy(void *restrict dest, const void *restrict src, int c, size_t n); //OK
+void    *ft_memchr(const void *s, int c, size_t n); //Pending
+int     ft_memcmp(const void *s1, const void *s2, size_t n); //Pending
 void	*ft_memcpy(void *restrict dest, const void *restrict src, int c, size_t n);
 void    *ft_memmove(void *dest, const void *src, size_t n);
 void    *ft_memset(void *b, int c, size_t len); //OK
