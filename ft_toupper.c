@@ -6,7 +6,22 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:54:05 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 16:54:06 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/06 17:17:34 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+char	*ft_toupper(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+			str[i] = str[i] - 32;
+		}
+		i++;
+	}
+	return (str);
+}

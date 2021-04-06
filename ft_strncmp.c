@@ -6,7 +6,23 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:53:07 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 16:53:07 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/06 17:13:52 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
+{
+	if (n == 0)
+		return (0);
+	while (n != 0)
+	{
+		if (*s1 != *s2)
+			return (*s1 - *s2);
+		if (*s1 == 0)
+			return (0);
+		s1++;
+		s2++;
+		n--;
+	}
+	return (0);
+}
