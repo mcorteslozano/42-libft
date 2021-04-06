@@ -6,7 +6,13 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:51:26 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 16:51:26 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/06 19:29:57 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void    *ft_memmove(void *dest, const void *src, size_t n)
+{
+    
+}

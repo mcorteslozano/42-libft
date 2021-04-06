@@ -6,9 +6,11 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:54:05 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 17:17:34 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/06 19:17:23 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_toupper(char *str)
 {

@@ -6,7 +6,13 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:05 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 16:52:06 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/06 19:29:52 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+int     ft_memcmp(const void *s1, const void *s2, size_t n)
+{
+    
+}

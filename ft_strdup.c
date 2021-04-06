@@ -6,7 +6,13 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:54:40 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 16:54:40 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/06 19:30:02 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+char *ft_strdup(const char *s, size_t n)
+{
+	
+}

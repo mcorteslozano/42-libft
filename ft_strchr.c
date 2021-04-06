@@ -6,7 +6,13 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:40 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 16:52:41 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/06 19:16:41 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+char	*ft_strchr(const char *s, int c)
+{
+	
+}

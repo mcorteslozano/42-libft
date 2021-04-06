@@ -6,24 +6,23 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:53:58 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 17:16:43 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/06 19:42:15 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char *str)
-{
-	int i;
-	int j;
+#include "libft.h"
 
-	i = 0;
-	j = 1;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 32 || str[i] == 127)
-			j = 1;
-		else
-			return (0);
-		i++;
-	}
-	return (j);
+int		ft_isprint(int c)
+{
+	if(c >= ' ' && c <= '~')
+		return (1);
+	else
+		return (0);
+}
+
+int main()
+{
+    char c = '\n';
+    printf("Función propia: %d ", ft_isprint(c));
+    printf("Función sistema: %d ", isprint(c));
 }

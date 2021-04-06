@@ -6,9 +6,11 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:28 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 17:14:35 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/06 19:16:50 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 unsigned int	ft_strlen(char *str)
 {
