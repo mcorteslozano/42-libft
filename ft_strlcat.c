@@ -6,7 +6,7 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:28 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 19:16:50 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/07 17:58:40 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ unsigned int	ft_strlen(char *str)
 	return (length);
 }
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+unsigned int	ft_strlcat(char * restrict dest, char * restrict src, size_t dstsize)
 {
 	unsigned int offset;
 	unsigned int dest_len;
@@ -31,11 +31,11 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);
 	offset = dest_len;
-	if (src_len == 0 && size == 0)
+	if (src_len == 0 && dstsize == 0)
 		return (0);
-	else if (offset > size - 1)
-		return (src_len + size);
-	while ((*src != '\0') && (offset < size - 1) && (size != 0))
+	else if (offset > dstsize - 1)
+		return (src_len + dstsize);
+	while ((*src != '\0') && (offset < dstsize - 1) && (dstsize != 0))
 	{
 		*(dest + offset) = *src;
 		offset++;

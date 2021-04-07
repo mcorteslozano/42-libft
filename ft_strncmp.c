@@ -6,25 +6,19 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:53:07 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 19:17:03 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/07 19:59:48 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	if (n == 0)
-		return (0);
-	while (n != 0)
-	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		if (*s1 == 0)
-			return (0);
-		s1++;
-		s2++;
-		n--;
-	}
-	return (0);
+
+}
+
+int main()
+{
+	printf("Función propia: %d\n", ft_strncmp("Lets do it!", "Lets do it, Mario!", 15));
+	printf("Función sistema: %d\n", strncmp("Lets do it!", "Lets do it, Mario!", 15));
 }
