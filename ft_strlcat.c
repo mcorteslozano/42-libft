@@ -3,44 +3,37 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:28 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/07 17:58:40 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/07 22:57:39 by mario            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_strlen(char *str)
+
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	int length;
+	size_t i;
+	size_t j;
+	size_t h;
+	size_t len;
 
-	length = 0;
-	while (str[length] != '\0')
-		length++;
-	return (length);
-}
-
-unsigned int	ft_strlcat(char * restrict dest, char * restrict src, size_t dstsize)
-{
-	unsigned int offset;
-	unsigned int dest_len;
-	unsigned int src_len;
-
-	dest_len = ft_strlen(dest);
-	src_len = ft_strlen(src);
-	offset = dest_len;
-	if (src_len == 0 && dstsize == 0)
-		return (0);
-	else if (offset > dstsize - 1)
-		return (src_len + dstsize);
-	while ((*src != '\0') && (offset < dstsize - 1) && (dstsize != 0))
+	h = ft_strlen(dst);
+	if (dstsize < h)
+		h = dstsize;
+	len = dstsize - h;
+	if (!len)
+		return (h + ft_strlen(src));
+	i = 0;
+	j = h;
+	while (j + 1 < dstsize && src[i] != '\0')
 	{
-		*(dest + offset) = *src;
-		offset++;
-		src++;
+		dst[j] = src[i];
+		i++;
+		j++;
 	}
-	*(dest + offset) = '\0';
-	return (dest_len + src_len);
+	dst[j] = '\0';
+	return (ft_strlen(src) + h);
 }
