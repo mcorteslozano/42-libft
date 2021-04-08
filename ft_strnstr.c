@@ -6,13 +6,8 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:59 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 19:30:05 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/08 18:49:46 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char *ft_strnstr(const char *big, const char *little, size_t len)
-{
-    
-}

@@ -6,13 +6,8 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:54:30 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/06 19:29:41 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/08 18:50:22 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void    *ft_calloc(size_t nmemb, size_t size)
-{
-
-}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
+/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:40 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/07 22:41:09 by mario            ###   ########.fr       */
+/*   Updated: 2021/04/08 17:49:29 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,4 @@ char	*ft_strchr(const char *s, int c)
 		return (0);
 	else
 		return (str + i);
-}
-
-int main()
-{
-	printf("Función propia: %s\n", ft_strchr("Lets do it!", 's'));
-	printf("Función sistema: %s\n", strchr("Lets do it!", 's'));
 }

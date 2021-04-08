@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mario <mario@student.42.fr>                +#+  +:+       +#+         #
+#    By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 22:59:01 by mario             #+#    #+#              #
-#    Updated: 2021/04/07 23:02:02 by mario            ###   ########.fr        #
+#    Updated: 2021/04/08 19:59:28 by mcortes-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ all : $(NAME)
 $(NAME) :
 		gcc $(CFLAGS) -c $(SRC)
 		ar rc $(NAME) $(OBJS)
-		ranlib $(NAME)
+		ranlib $(NAME) 
 
 clean :
 		rm -f *.o

@@ -6,43 +6,35 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:53:14 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/07 19:19:26 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/08 19:52:23 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_isspace(char c)
-{
-	if (c == '\t' || c == '\n' || c == '\r')
-		return (1);
-	else if (c == '\f' || c == '\v' || c == ' ')
-		return (1);
-	else
-		return (0);
-}
-
 int	ft_atoi(const char *str)
 {
-	int		res;
-	int		negative;
+	int numero;
+	int negativo;
+	int i;
 
-	negative = 1;
-	res = 0;
-	while (ft_isspace(*str))
-		str++;
-	if (*str == '-')
+	numero = 0;
+	negativo = 1;
+	i = 0;
+	while ((str[i] == ' ') || (str[i] >= 9 && str[i] <= 13))
+		i++;
+	while (str[i] == '-' || str[i] == '+')
 	{
-		negative = -1;
-		str++;
+		if (str[i] == '-')
+		{
+			negativo = -negativo;
+		}
+		i++;
 	}
-	else if (*str == '+')
-	{
-		str++;
+	while (str[i] >= '0' && str[i] <= '9')
+	{	
+		numero = numero * 10 + str[i] - 48;
+		i++;
 	}
-	while (*str >= '0' && *str <= '9')
-	{
-		res = (res * 10) + (*str++ - 48);
-	}
-	return (negative * res);
+	return (numero * negativo);
 }

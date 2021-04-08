@@ -6,7 +6,7 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:16 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/07 19:37:53 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/08 20:01:09 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,25 @@
 
 size_t	ft_strlcpy(char *dest, char *src, size_t size)
 {
-	unsigned int	x;
-	unsigned int	buffer;
+	size_t		i;
+	size_t		j;
 
-	x = 0;
-	buffer = 0;
-	while (src[x] != '\0')
-		x++;
-	buffer = x;
-	x = 0;
+	i = 0;
+	j = 0;
+	if(!dest || !src)
+		return (0);
+	while (src[j] != '\0')
+		j++;
+	if (size == 0)
+		return (j);
+	while (i != size - 1 && src[i])
+	{
+		dest[i] = src[i];
+		i++;
+	}
 	if (size != 0)
 	{
-		while (x < size)
-		{
-			if (x == size - 1)
-				dest[x] = 0;
-			else
-				dest[x] = src[x];
-			x++;
-		}
+		dest[i] = '\0';
 	}
-	return (buffer);
+	return (j);
 }
