@@ -6,7 +6,7 @@
 /*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 19:18:26 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/09 14:12:11 by mario            ###   ########.fr       */
+/*   Updated: 2021/04/09 16:11:25 by mario            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize); // Tester: OK - N
 size_t  ft_strlcpy(char *dest, char *src, size_t size); // Tester: OK - Norminette: OK
 size_t	ft_strlen(const char *s); // Tester: OK - Norminette: OK
 int		ft_strncmp(const char *s1, const char *s2, size_t n); // Tester: OK - Norminette: OK
-char	*ft_strnstr(const char *big, const char	*little, unsigned int len); // Pending test...
+char	*ft_strnstr(const char *big, const char	*little, size_t len); // Pending test...
 char    *ft_strrchr(const char *s, int c); // Pending test...
 int     ft_tolower(int c); // Tester: OK - Norminette: OK
 int     ft_toupper(int c); // Tester: OK - Norminette: OK

@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/06 16:53:38 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/09 16:12:09 by mario            ###   ########.fr       */
+/*   Created: 2021/04/09 15:58:45 by mario             #+#    #+#             */
+/*   Updated: 2021/04/09 15:59:11 by mario            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
-int	ft_isalnum(int c)
+int main()
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+    printf("PROBANDOOOOOOOOOOOOOOO....");
 }
