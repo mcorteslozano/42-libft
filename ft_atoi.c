@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:53:14 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/08 20:22:20 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/09 15:00:50 by mario            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,29 @@
 
 int	ft_atoi(const char *str)
 {
-	int numero;
-	int negativo;
-	int i;
+	unsigned long long		resultado;
+	int 					negativo;
+	int 					i;
 
-	numero = 0;
+	resultado = 0;
 	negativo = 1;
 	i = 0;
-	while ((str[i] == ' ') || (str[i] >= 9 && str[i] <= 13))
+	while (str[i] && ((str[i] >= 9 && str[i] <= 13 )|| str[i] == 32))
 		i++;
-	while (str[i] == '-' || str[i] == '+')
-	{
-		if (str[i] == '-')
-		{
-			negativo = -negativo;
-		}
+	if (str[i] == '-')
+		negativo *= -1;
+	if (str[i] == '-' || str[i] == '+')
 		i++;
-	}
 	while (str[i] >= '0' && str[i] <= '9')
-	{	
-		numero = numero * 10 + str[i] - 48;
-		i++;
+	{
+		if ((resultado > __LONG_LONG_MAX__) || (i >= 19)) // >= 19
+		{
+			if (negativo == 1)
+				return (-1);
+			else
+				return (0);
+		}
+		resultado = resultado * 10 + (str[i++] - 48);
 	}
-	return (numero * negativo);
+	return (resultado * negativo);
 }

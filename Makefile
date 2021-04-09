@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+         #
+#    By: mario <mario@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 22:59:01 by mario             #+#    #+#              #
-#    Updated: 2021/04/08 19:59:28 by mcortes-         ###   ########.fr        #
+#    Updated: 2021/04/09 15:08:49 by mario            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,6 @@ SRC = ft_atoi.c	ft_bzero.c	ft_calloc.c		\
 	   ft_strncmp.c		ft_strnstr.c	ft_strrchr.c	\
 	   ft_strtrim.c		ft_substr.c		ft_tolower.c	\
 	   ft_toupper.c
-
 OBJS = ft_atoi.o	ft_bzero.o	ft_calloc.o		\
 		ft_isalnum.o	ft_isalpha.o	ft_isascii.o	\
 		ft_isdigit.o	ft_isprint.o	ft_itoa.o		\
