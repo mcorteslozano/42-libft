@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mario <mario@student.42.fr>                +#+  +:+       +#+         #
+#    By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 22:59:01 by mario             #+#    #+#              #
-#    Updated: 2021/04/09 16:23:32 by mario            ###   ########.fr        #
+#    Updated: 2021/04/12 18:41:42 by mcortes-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,6 +72,8 @@ clean :
 
 fclean:		clean
 	rm -f ${NAME}
+	rm -f libft.s
+	rm -f main.c
 
 re: fclean all
 

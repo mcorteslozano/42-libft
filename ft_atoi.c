@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
+/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:53:14 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/09 15:00:50 by mario            ###   ########.fr       */
+/*   Updated: 2021/04/12 17:28:21 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 int	ft_atoi(const char *str)
 {
-	unsigned long long		resultado;
-	int 					negativo;
-	int 					i;
+	unsigned long long	resultado;
+	int					negativo;
+	int					i;
 
 	resultado = 0;
 	negativo = 1;
 	i = 0;
-	while (str[i] && ((str[i] >= 9 && str[i] <= 13 )|| str[i] == 32))
+	while (str[i] && ((str[i] >= 9 && str[i] <= 13 ) || str[i] == 32))
 		i++;
 	if (str[i] == '-')
 		negativo *= -1;
@@ -29,7 +29,7 @@ int	ft_atoi(const char *str)
 		i++;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if ((resultado > __LONG_LONG_MAX__) || (i >= 19)) // >= 19
+		if ((resultado > __LONG_LONG_MAX__) || (i >= 19))
 		{
 			if (negativo == 1)
 				return (-1);

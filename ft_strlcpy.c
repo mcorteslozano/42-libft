@@ -6,7 +6,7 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:16 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/08 20:01:09 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/12 17:40:04 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dest, char *src, size_t size)
 
 	i = 0;
 	j = 0;
-	if(!dest || !src)
+	if (!dest || !src)
 		return (0);
 	while (src[j] != '\0')
 		j++;

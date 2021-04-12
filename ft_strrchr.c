@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
+/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:50 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/09 12:58:06 by mario            ###   ########.fr       */
+/*   Updated: 2021/04/12 17:41:12 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	if (str[i] != c)
 		return (0);
-	else 
+	else
 		return (str + i);
 }
