@@ -3,11 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/12 18:35:13 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/12 18:38:36 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/13 13:24:57 by mario            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void    ft_lstiter(t_list *lst, void (*f)(void *))
+{
+    while (lst)
+    {
+        f(lst->content);
+        lst = lst->next;
+    }
+}
