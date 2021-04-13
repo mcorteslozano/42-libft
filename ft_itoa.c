@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
+/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:55:26 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/13 13:44:13 by mario            ###   ########.fr       */
+/*   Updated: 2021/04/13 17:56:23 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	value(int n)
 {
-	int i;
+	int		i;
 
 	i = 0;
 	if (n < 0)
@@ -40,7 +40,8 @@ char	*ft_itoa(int n)
 
 	m = n;
 	i = value(m);
-	if (!(s = malloc(sizeof(char) * (i + 1))))
+	s = malloc(sizeof(char) * (i + 1));
+	if (!s)
 		return (NULL);
 	s[i--] = '\0';
 	if (m < 0)
