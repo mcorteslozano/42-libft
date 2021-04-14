@@ -6,7 +6,7 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:55:26 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/14 18:37:03 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/14 20:06:16 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 	passed as argument. Negative numbers must be
 	negative numbers must be handled.
 */
-static int	value(int n)
+int	value(int n)
 {
 	int		i;
 
