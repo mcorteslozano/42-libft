@@ -6,12 +6,19 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:05 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/07 19:28:52 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/14 18:19:40 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+	Name: ft_memcmp
+	Parameters: const void *s1, const void *s2, size_t n
+	Authorized functions: none
+	Description: compares the first n bytes (each
+	interpreted as unsigned char) of the memory areas s1 and s2.
+*/
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*str1;

@@ -6,12 +6,21 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:55:26 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/13 17:56:23 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/14 18:37:03 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+	Name: ft_itoa
+	Parameters: int c
+	Authorized functions: malloc
+	Description: Reserves memory (using malloc(3)) and returns the
+	string representing the integer
+	passed as argument. Negative numbers must be
+	negative numbers must be handled.
+*/
 static int	value(int n)
 {
 	int		i;

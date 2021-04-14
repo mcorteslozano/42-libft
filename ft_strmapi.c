@@ -6,18 +6,27 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:55:35 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/13 18:19:43 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/14 18:48:05 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+	Name: ft_strmapi
+	Parameters: char const *s, char (*f)(unsigned int, char)
+	Authorized functions: malloc
+	Description: applies the function 'f' to each character in the de
+	character string 's' to create a new character string (with
+	string (with malloc (3)) resulting from successive applications of 'f'.
+	from successive applications of 'f'.
+*/
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*new;
 	int		i;
 	int		len;
-	
+
 	if (!s)
 		return (NULL);
 	i = 0;

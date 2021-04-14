@@ -6,13 +6,21 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:56:06 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/08 18:54:19 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/14 18:40:24 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
 
+/*
+	Name: ft_putendl_fd
+	Parameters: char *s, int fd
+	Authorized functions: write
+	Description: writes the character string 's' over the provided
+	file descriptor provided, followed by a line break.
+	a line break.
+*/
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (s != NULL)

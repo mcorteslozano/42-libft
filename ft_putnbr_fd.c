@@ -6,13 +6,20 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:56:15 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/08 19:01:40 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/14 18:40:13 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
 
+/*
+	Name: ft_putnbr_fd
+	Parameters: int n, int fd
+	Authorized functions: write
+	Description: writes the integer 'n' over the file descriptor provided.
+	file descriptor provided.
+*/
 void	ft_putnbr_fd(int n, int fd)
 {
 	int		m;

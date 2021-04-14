@@ -6,12 +6,19 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:16 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/12 17:40:04 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/14 18:20:04 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+	Name: ft_strlcpy
+	Parameters: char *dest, char *src, size_t size
+	Authorized functions: none
+	Description: copies up to size - 1 characters from the NUL-terminated 
+	string src to dst, NUL-terminating the result.
+*/
 size_t	ft_strlcpy(char *dest, char *src, size_t size)
 {
 	size_t		i;

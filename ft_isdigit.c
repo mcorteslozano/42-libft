@@ -6,12 +6,18 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:53:31 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/07 19:25:02 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/14 18:28:36 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+	Name: ft_isdigit
+	Parameters: int c
+	Authorized functions: none
+	Description: checks for an digit character.
+*/
 int	ft_isdigit(int c)
 {
 	if (c > 47 && c < 58)

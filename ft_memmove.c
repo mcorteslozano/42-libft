@@ -6,12 +6,22 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:51:26 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/12 17:37:34 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/14 18:19:50 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+	Name: ft_memmove
+	Parameters: void *dest, const void *src, size_t len
+	Authorized functions: none
+	Description: copies n bytes from memory area src to
+	memory area dest.  The memory areas may overlap: copying takes
+	place as though the bytes in src are first copied into a
+	temporary array that does not overlap src or dest, and the bytes
+	are then copied from the temporary array to dest.
+*/
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	size_t				i;

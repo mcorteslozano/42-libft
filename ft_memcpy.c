@@ -6,12 +6,19 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:50:43 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/12 17:37:17 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/14 18:19:44 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+	Name: ft_memcpy
+	Parameters: void *dest, const void *src, size_t n
+	Authorized functions: none
+	Description: copies n bytes from memory area src to
+	memory area dest.
+*/
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned int	i;

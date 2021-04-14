@@ -6,12 +6,19 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:53:14 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/12 17:28:21 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/14 18:25:00 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+	Name: ft_atoi
+	Parameters: const char *str
+	Authorized functions: none
+	Description: converts the initial portion of the 
+	string pointed to by nptr to int. 
+*/
 int	ft_atoi(const char *str)
 {
 	unsigned long long	resultado;
