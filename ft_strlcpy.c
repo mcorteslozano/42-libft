@@ -6,7 +6,7 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:16 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/14 18:20:04 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/16 18:52:23 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,27 +19,29 @@
 	Description: copies up to size - 1 characters from the NUL-terminated 
 	string src to dst, NUL-terminating the result.
 */
-size_t	ft_strlcpy(char *dest, char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t		i;
-	size_t		j;
+	unsigned int	i;
+	size_t			size_src;
 
 	i = 0;
-	j = 0;
-	if (!dest || !src)
+	if (src == NULL)
 		return (0);
-	while (src[j] != '\0')
-		j++;
-	if (size == 0)
-		return (j);
-	while (i != size - 1 && src[i])
+	size_src = ft_strlen(src);
+	if ((int)size < 0)
+		size = size_src + 1;
+	if (size >= 2 && size_src != 0)
 	{
-		dest[i] = src[i];
-		i++;
+		while (i < size - 1)
+		{
+			if (i < size_src)
+				dst[i] = src[i];
+			else if (i == size_src)
+				dst[i] = '\0';
+			i++;
+		}
 	}
 	if (size != 0)
-	{
-		dest[i] = '\0';
-	}
-	return (j);
+		dst[i] = '\0';
+	return (size_src);
 }

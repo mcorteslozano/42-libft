@@ -6,7 +6,7 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:55:01 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/14 18:47:41 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/16 19:03:36 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,29 +23,29 @@
 */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*str;
+	int		len1;
+	int		len2;
+	char	*aux;
 	int		i;
-	int		j;
 
 	if (!s1 || !s2)
 		return (NULL);
-	i = ft_strlen(s1);
-	j = ft_strlen(s2);
-	str = malloc(sizeof(char) * (i + j + 1));
-	if (!str)
-		return (NULL);
 	i = 0;
-	j = 0;
-	while (s1[i] != '\0')
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	aux = (char *)malloc(len1 + len2 + 1);
+	if (!aux)
+		return (NULL);
+	while (i < len1 || i < len2)
 	{
-		str[i] = s1[i];
+		if (i < len1)
+			aux[i] = s1[i];
+		if (i < len2)
+			aux[i + len1] = s2[i];
 		i++;
 	}
-	while (s2[j] != '\0')
-	{
-		str[i] = s2[j];
-		i++ && j++;
-	}
-	str[i] = '\0';
-	return (str);
+	aux[len1 + len2] = '\0';
+	return (aux);
 }
+
+
