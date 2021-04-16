@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:55:16 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/14 20:13:56 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/16 13:02:22 by mario            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,35 +17,56 @@
 	Parameters: char const *s, char c
 	Authorized functions: malloc, free
 	Description: reserves memory (with malloc(3)) and returns a
-    string table obtained by separating
-    s' with the character 'c', which is used as a delimiter.
-    delimiter. The table must end with NULL.
+	string auxle obtained by separating
+	s' with the character 'c', which is used as a delimiter.
+	delimiter. The auxle must end with NULL.
 */
+static size_t	ft_count(char const *s, char c)
+{
+	int		i;
+	size_t	count;
+
+	count = 0;
+	i = 0;
+	while (s[i] && s[i] == c)
+		i++;
+	while (s[i])
+	{
+		while (s[i] && s[i] == c)
+			i++;
+		if (s[i])
+		{
+			while (s[i] && s[i] != c)
+				i++;
+			count++;
+		}
+	}
+	return (count);
+}
 
 char	**ft_split(char const *s, char c)
 {
-	char	**new;
+	char	**aux;
 	int		i;
+	size_t	j;
+	int		start;
 
-	i = 0;
-	if (!s)
+	if (!s || !(aux = (char **)malloc(sizeof(char *) * (ft_count(s, c) + 1))))
 		return (NULL);
-	while (*s)
-	{
-		i++;
-		s++;
-	}
-	new = malloc(sizeof(char) * (i + 1));
-	if (!new)
-		return (NULL);
-	while (*s && *s != c)
-		s++;
 	i = 0;
-	while (*s && *s == c)
+	j = 0;
+	while (s[i])
 	{
-		new[i] = *s;
-		i++;
+		if (s[i] == c)
+			i++;
+		else
+		{
+			start = i;
+			while (s[i] && s[i] != c)
+				i++;
+			aux[j++] = ft_substr(s, start, i - start);
+		}
 	}
-	new[i] = '\0';
-	return (*new);
+	aux[j] = NULL;
+	return (aux);
 }
