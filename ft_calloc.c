@@ -6,7 +6,7 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:54:30 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/14 18:30:35 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/16 19:34:54 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,20 +36,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	}
 	return (ptr);
 }
-
-/*
-
-	char	*p;
-	size_t	i;
-
-	i = 0;
-	if (!(p = malloc(size * count)))
-		return (NULL);
-	while (i < count * size)
-	{
-		p[i] = 0;
-		i++;
-	}
-	return (p); 
-
-*/
