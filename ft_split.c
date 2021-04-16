@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
+/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:55:16 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/16 13:02:22 by mario            ###   ########.fr       */
+/*   Updated: 2021/04/16 19:26:52 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,8 @@ char	**ft_split(char const *s, char c)
 	size_t	j;
 	int		start;
 
-	if (!s || !(aux = (char **)malloc(sizeof(char *) * (ft_count(s, c) + 1))))
+	aux = (char **)malloc(sizeof(char *) * (ft_count(s, c) + 1));
+	if (!s || !aux)
 		return (NULL);
 	i = 0;
 	j = 0;

@@ -6,7 +6,7 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 19:18:26 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/16 18:53:36 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/16 19:31:53 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,9 @@ void	ft_putnbr_fd(int n, int fd);
 
 typedef struct s_list
 {
-	void *content;
-	struct s_list *next;
-}	t_list;
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **alst, t_list *new);
 int		ft_lstsize(t_list *lst);

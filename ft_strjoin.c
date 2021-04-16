@@ -6,7 +6,7 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:55:01 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/16 19:03:36 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/16 19:28:48 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	aux[len1 + len2] = '\0';
 	return (aux);
 }
-
-
