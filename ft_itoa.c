@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:55:26 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/14 20:06:16 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/19 12:49:54 by mario            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 	passed as argument. Negative numbers must be
 	negative numbers must be handled.
 */
-int	value(int n)
+static int	value(int n)
 {
 	int		i;
 

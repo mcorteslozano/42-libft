@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:53:14 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/14 18:25:00 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/19 12:49:18 by mario            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 	Parameters: const char *str
 	Authorized functions: none
 	Description: converts the initial portion of the 
-	string pointed to by nptr to int. 
+	string pointed to by str to int. 
 */
 int	ft_atoi(const char *str)
 {

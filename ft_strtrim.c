@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:55:08 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/16 18:59:40 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/19 12:48:46 by mario            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,9 @@
 	Parameters: char const *s1, char const *set
 	Authorized functions: malloc
 	Description: reserves memory (with malloc(3)) and returns 
-	the string that is a copy of 's1'.
-	character string that is a copy of 's1', without the characters
-	the characters indicated in the 'set' at the beginning and at the end of the
-	at the end of the string.
+	the string that is a copy of 's1', without the characters
+	indicated in the 'set' at the beginning and at the end of the
+	string.
 */
 char	*ft_strtrim(char const *s1, char const *set)
 {

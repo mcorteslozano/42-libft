@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:55:01 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/16 19:28:48 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/19 12:52:05 by mario            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 	Description: reserves memory (with malloc(3)) and returns the new
 	string resulting from the
 	new string resulting from the concatenation of 's1' and 's2'.
-	concatenation of 's1' and 's2'.
 */
 char	*ft_strjoin(char const *s1, char const *s2)
 {

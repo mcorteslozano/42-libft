@@ -4,6 +4,7 @@
         "stdio.h": "c",
         "libft.h": "c",
         "stdlib.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "ctype.h": "c"
     }
 }

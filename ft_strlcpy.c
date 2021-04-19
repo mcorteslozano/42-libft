@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mario <mario@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:52:16 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/16 18:52:23 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/19 12:52:33 by mario            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 	Name: ft_strlcpy
-	Parameters: char *dest, char *src, size_t size
+	Parameters: char *dst, char *src, size_t size
 	Authorized functions: none
 	Description: copies up to size - 1 characters from the NUL-terminated 
 	string src to dst, NUL-terminating the result.
