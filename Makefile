@@ -6,7 +6,7 @@
 #    By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/07 22:59:01 by mario             #+#    #+#              #
-#    Updated: 2021/04/13 17:37:51 by mcortes-         ###   ########.fr        #
+#    Updated: 2021/04/19 19:16:16 by mcortes-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,11 +23,11 @@ SRC = ft_atoi.c	ft_bzero.c	ft_calloc.c		\
 	   ft_strlcpy.c		ft_strlen.c		ft_strmapi.c	\
 	   ft_strncmp.c		ft_strnstr.c	ft_strrchr.c	\
 	   ft_strtrim.c		ft_substr.c		ft_tolower.c	\
-	   ft_toupper.c		main.c
+	   ft_toupper.c
 
-BONUS =  ft_lstadd_back_bonus.c		ft_lstadd_front_bonus.c		ft_lstclear_bonus.c	\
-		 ft_lstdelone_bonus.c	ft_lstiter_bonus.c	ft_lstlast_bonus.c	\
-		 ft_lstmap_bonus.c	ft_lstnew_bonus.c	ft_lstsize_bonus.c
+BONUS =  ft_lstadd_back.c		ft_lstadd_front.c		ft_lstclear.c	\
+		 ft_lstdelone.c	ft_lstiter.c	ft_lstlast.c	\
+		 ft_lstmap.c	ft_lstnew.c	ft_lstsize.c
 
 OBJS = ft_atoi.o	ft_bzero.o	ft_calloc.o		\
 		ft_isalnum.o	ft_isalpha.o	ft_isascii.o	\
@@ -40,11 +40,11 @@ OBJS = ft_atoi.o	ft_bzero.o	ft_calloc.o		\
 		ft_strlcpy.o	ft_strlen.o		ft_strmapi.o	\
 		ft_strncmp.o	ft_strnstr.o	ft_strrchr.o	\
 		ft_strtrim.o	ft_substr.o		ft_tolower.o	\
-		ft_toupper.o	main.c
+		ft_toupper.o
 
-BONUSO = ft_lstadd_back_bonus.o	ft_lstadd_front_bonus.o	ft_lstclear_bonus.o	\
-		 ft_lstdelone_bonus.o	ft_lstiter_bonus.o	ft_lstlast_bonus.o	\
-		 ft_lstmap_bonus.o	ft_lstnew_bonus.o	ft_lstsize_bonus.o
+BONUSO = ft_lstadd_back.o	ft_lstadd_front.o	ft_lstclear.o	\
+		 ft_lstdelone.o	ft_lstiter.o	ft_lstlast.o	\
+		 ft_lstmap.o	ft_lstnew.o	ft_lstsize.o
 
 CFLAGS = -Wall -Werror -Wextra
 

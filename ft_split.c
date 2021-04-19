@@ -6,7 +6,7 @@
 /*   By: mcortes- <mcortes-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 16:55:16 by mcortes-          #+#    #+#             */
-/*   Updated: 2021/04/16 19:26:52 by mcortes-         ###   ########.fr       */
+/*   Updated: 2021/04/19 19:11:49 by mcortes-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,22 +51,23 @@ char	**ft_split(char const *s, char c)
 	size_t	j;
 	int		start;
 
+	if (!s)
+		return (NULL);
 	aux = (char **)malloc(sizeof(char *) * (ft_count(s, c) + 1));
-	if (!s || !aux)
+	if (!aux)
 		return (NULL);
 	i = 0;
 	j = 0;
-	while (s[i])
+	while (i < (int)ft_strlen(s))
 	{
-		if (s[i] == c)
-			i++;
-		else
+		if (s[i] && s[i] != c)
 		{
 			start = i;
 			while (s[i] && s[i] != c)
 				i++;
 			aux[j++] = ft_substr(s, start, i - start);
 		}
+		i++;
 	}
 	aux[j] = NULL;
 	return (aux);
